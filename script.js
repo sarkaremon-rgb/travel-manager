@@ -1,1 +1,1 @@
-(() => {const b=document.getElementById('lang');let lang='bn';b.addEventListener('click',()=>{lang=lang==='bn'?'en':'bn';document.documentElement.lang=lang;document.querySelectorAll('[data-bn][data-en]').forEach(e=>e.textContent=e.dataset[lang]);b.textContent=lang==='bn'?'English':'বাংলা';});document.getElementById('downloadButton').addEventListener('click',e=>{if(e.currentTarget.getAttribute('aria-disabled')==='true'){e.preventDefault();alert(lang==='bn'?'ডাউনলোড চালু করতে আসল Windows .exe ইনস্টলার যোগ করুন।':'Add the real Windows .exe installer first.');}});})();
+
